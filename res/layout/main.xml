@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:ads="http://schemas.android.com/apk/res/com.google.example"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:editable="false" android:id="@+id/lblLowerBound" android:text="@string/TicketLowerBound" android:textSize="20sp"></TextView>
+    <EditText android:numeric="integer" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/txtLowerBound" android:text="@string/EMPTY_STRING"></EditText>
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/TicketUpperBound" android:id="@+id/lblUpperBound" android:textSize="20sp"></TextView>
+    <EditText android:numeric="integer" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/txtUpperBound" android:text="@string/EMPTY_STRING"></EditText>
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/btnCalculate" android:text="@string/CalculateButtonText"></Button>
+    <TextView android:text="And the winner is..." android:layout_height="wrap_content" android:id="@+id/lblWinningNumber" android:layout_width="wrap_content" android:textSize="20sp" android:paddingBottom="20sp" android:paddingTop="10sp"></TextView>
+    <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:textSize="20sp" android:text="Don't allow duplicate winners:"></TextView>
+        <ToggleButton android:layout_width="wrap_content" android:text="ToggleButton" android:layout_height="wrap_content" android:id="@+id/tglDuplicates"></ToggleButton>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/adLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    </LinearLayout>
+    <!-- <com.google.ads.AdView android:id="@+id/adView" 
+    					   android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           ads:adUnitId="a14d9fc66893b9c"
+                           ads:adSize="BANNER"></com.google.ads.AdView> -->
+</LinearLayout>
